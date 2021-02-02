@@ -1,0 +1,3 @@
+rootProject.name = "Linkt"
+include ':app'
+include ':linkt'
