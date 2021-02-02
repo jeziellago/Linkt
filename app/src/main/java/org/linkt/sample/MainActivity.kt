@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     private fun showDataFromDeepLink(extras: Bundle?) {
         extras?.run {
             var data = "UserId = ${getString("userId")}\n"
-            data += "UserId = ${getString("userName")}\n"
+            data += "UserName = ${getString("userName")}\n"
             findViewById<TextView>(R.id.textDeepLink).text = data
         }
     }
