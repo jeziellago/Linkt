@@ -1,5 +1,5 @@
 # Linkt ![](https://github.com/jeziellago/Linkt/workflows/DEPLOY/badge.svg?branch=release) [ ![Download](https://api.bintray.com/packages/jeziellago/Linkt/Linkt/images/download.svg) ](https://bintray.com/jeziellago/Linkt/Linkt/_latestVersion)
-A light and simple kotlin library for deep link handling on Android.
+A lightweight and simple kotlin library for deep link handling on Android.
 ## Setup
 Add `Linkt` to your project `build.gradle`:
 ```
