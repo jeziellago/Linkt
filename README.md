@@ -1,10 +1,19 @@
-# Linkt ![](https://github.com/jeziellago/Linkt/workflows/DEPLOY/badge.svg?branch=release) [ ![Download](https://api.bintray.com/packages/jeziellago/Linkt/Linkt/images/download.svg) ](https://bintray.com/jeziellago/Linkt/Linkt/_latestVersion) [![](https://androidweekly.net/issues/issue-453/badge)](https://androidweekly.net/issues/issue-453)
+# Linkt ![](https://github.com/jeziellago/Linkt/workflows/CI/badge.svg?branch=main)  [![](https://androidweekly.net/issues/issue-453/badge)](https://androidweekly.net/issues/issue-453)
 A lightweight and simple kotlin library for deep link handling on Android.
 ## Setup
+Configure root `build.gradle` (jitpack.io):
+```  
+allprojects {  
+    repositories {  
+        ...  
+        maven { url 'https://jitpack.io' }  
+    }  
+}  
+```  
 Add `Linkt` to your project `build.gradle`:
 ```
 dependencies {
-  implementation 'org.linkt:linkt:LATEST_VERSION'
+  implementation 'com.github.jeziellago:Linkt:TAG'
 }
 ```
 

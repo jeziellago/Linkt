@@ -2,7 +2,6 @@ plugins {
     id 'com.android.library'
     id 'kotlin-android'
     id("maven-publish")
-    id("com.jfrog.bintray") version "1.8.5"
 }
 
 android {
@@ -49,7 +48,7 @@ task androidSourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
 }
 
-def publishVersion = '0.1.0'
+def publishVersion = '0.1.1'
 
 afterEvaluate {
     publishing {
@@ -61,28 +60,6 @@ afterEvaluate {
                 version = publishVersion
                 artifact androidSourcesJar
             }
-        }
-    }
-}
-
-if (hasProperty("user") && hasProperty("key")) {
-    bintray {
-        user = property("user")
-        key = property("key")
-        setPublications("release")
-        pkg {
-            name = "Linkt"
-            repo = "Linkt"
-            websiteUrl = "https://github.com/jeziellago/Linkt"
-            issueTrackerUrl = "https://github.com/jeziellago/Linkt/issues"
-            vcsUrl = "https://github.com/jeziellago/Linkt.git"
-            publicDownloadNumbers = true
-            setLicenses("MIT")
-            desc = "A simple kotlin library for deep link handling easy on Android"
-            version.name = publishVersion
-            version.vcsTag = publishVersion
-            publish = true
-            override = true
         }
     }
 }
